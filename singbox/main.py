@@ -1,3 +1,11 @@
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "pandas",
+#     "requests",
+#     "pyyaml",
+# ]
+# ///
 import pandas as pd
 import concurrent.futures
 import os
@@ -129,7 +137,8 @@ def parse_list_file(link, output_directory):
     return file_name
 
 # 读取 links.txt 中的每个链接并生成对应的 JSON 文件
-with open("../links.txt", 'r') as links_file:
+current_dir = os.path.split(os.path.realpath(__file__))[0]
+with open(current_dir + "/links.txt", 'r') as links_file:
     links = links_file.read().splitlines()
 
 links = [l for l in links if l.strip() and not l.strip().startswith("#")]
