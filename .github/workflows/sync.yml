@@ -29,7 +29,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pandas requests pyyaml
     - name: Run script
-      run: python ../../main.py
+      run: python ../main.py
       working-directory: ./singbox/rule/
     - name: Commit and push config.json
       run: |
