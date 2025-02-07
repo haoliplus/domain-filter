@@ -1,10 +1,4 @@
 {
-  "rules": [
-    {
-      "domain": [
-        "lens.l.google.com"
-      ]
-    }
-  ],
+  "rules": [],
   "version": 1
 }

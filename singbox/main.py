@@ -13,6 +13,7 @@ import json
 import requests
 import yaml
 import ipaddress
+import urllib
 
 def read_yaml_from_url(url):
     response = requests.get(url)
@@ -21,7 +22,12 @@ def read_yaml_from_url(url):
     return yaml_data
 
 def read_list_from_url(url):
-    df = pd.read_csv(url, header=None, names=['pattern', 'address', 'other'], on_bad_lines='warn')
+    try:
+        df = pd.read_csv(url, header=None, names=['pattern', 'address', 'other'], on_bad_lines='warn')
+        print("Parse list from url: ", url)
+    except urllib.error.HTTPError:
+        print("Failed to read list from url: ", url)
+        return pd.DataFrame(columns=['pattern', 'address', 'other'])
     return df
 
 def is_ipv4_or_ipv6(address):
@@ -143,7 +149,7 @@ with open(current_dir + "/links.txt", 'r') as links_file:
 
 links = [l for l in links if l.strip() and not l.strip().startswith("#")]
 
-output_dir = "./"
+output_dir = current_dir + "/rule"
 result_file_names = []
 
 for link in links:
