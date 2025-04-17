@@ -2,7 +2,6 @@
   "rules": [
     {
       "domain": [
-        "chatgpt.com",
         "algolia.net",
         "api.statsig.com",
         "auth0.com",
