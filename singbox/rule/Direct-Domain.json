@@ -3,6 +3,7 @@
     {
       "domain": [
         "cctv.cn",
+        "cloudflareinsights.com",
         "dida365.com",
         "fast.com",
         "jijifun.com",
@@ -25,6 +26,7 @@
     {
       "domain_suffix": [
         ".cctv.cn",
+        ".cloudflareinsights.com",
         ".dida365.com",
         ".fast.com",
         ".jijifun.com",
