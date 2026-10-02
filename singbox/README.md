@@ -1,36 +1,18 @@
-# sing-box-geosite
+# sing-box 规则集
 
-在links.txt添加规则集，自动生成 sing-box Source Format。fork后自己添加想要转换的规则集，请生成token填写到仓库设置里让GitHub Actions有权限修改你的仓库
+规则内容完全由本仓库维护，工作流不再下载第三方规则列表。
 
-规则集源文件写法eg:
+- `surge/`：仓库根目录下的自维护 Surge 源规则。
+- `singbox/surge/`：由上述 17 份源文件转换的原生 JSON 与 manifest，请修改源文件后生成。
+- `singbox/rule/`：已有原生规则文件，保留现有远程链接，由本仓库直接维护；
+  工作流不再从外部覆盖这些文件。若修改 JSON 并继续提供对应 SRS，也需同步编译该 SRS。
 
-```json
-{
-  "tag": "geosite-wechat",
-  "type": "remote",
-  "format": "source",
-  "url": "https://raw.githubusercontent.com/Toperlock/sing-box-geosite/main/wechat.json",
-  "download_detour": "auto"
-}
-```
+## 生成与发布
 
-# 致谢（排名不分先后）
-
-[@izumiChan16](https://github.com/izumiChan16)
-
-[@ifaintad](https://github.com/ifaintad)
-
-[@NobyDa](https://github.com/NobyDa)
-
-[@blackmatrix7](https://github.com/blackmatrix7)
-
-[@DivineEngine](https://github.com/DivineEngine)
-
-## 仓库内 Surge 规则的原生版本
-
-`singbox/surge/` 对应本仓库 `surge/` 中的 17 个集合，保留原匹配内容，
-与原有 `singbox/rule/` 的其他上游集合分开。生成器不下载规则。
-修改 Surge 源后，现有 Config Update 工作流会重新生成这些 JSON；也可运行：
+修改根目录 `surge/` 的规则并推送到 main 后，Config Update 工作流运行转换测试、
+生成 `singbox/surge/*.json`，有变化时自动提交并推送生成文件。
+已移除定时拉取、`links.txt` 和旧下载脚本，只使用 Python 标准库转换仓库内文件。
+本地运行：
 
 ```sh
 python3 -m unittest discover -s singbox -p 'test_convert_surge.py' -v
@@ -56,5 +38,12 @@ OR 规则；CIDR 正规化；`no-resolve` 不写入原生规则集。
 明确跳过并输出警告，不扩大成域名匹配。`manifest.json` 记录源文件、SHA-256、
 条目数和跳过行；遇到其他未知类型或选项则终止生成。
 
-GitHub 的 schedule 只在默认分支执行；若默认分支不是 main，main 上的工作流
-仍可由 push 或手动执行触发，不能据此假定每天自动更新。
+## 历史来源致谢
+
+既有规则与旧转换实现参考过以下项目，现已停止自动同步其规则：
+
+- [izumiChan16](https://github.com/izumiChan16)
+- [ifaintad](https://github.com/ifaintad)
+- [NobyDa](https://github.com/NobyDa)
+- [blackmatrix7](https://github.com/blackmatrix7)
+- [DivineEngine](https://github.com/DivineEngine)
