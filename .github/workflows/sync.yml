@@ -31,12 +31,17 @@ jobs:
     - name: Run script
       run: python ../main.py
       working-directory: ./singbox/rule/
+    - name: Convert repository Surge rule-sets to sing-box
+      run: |
+        python -m unittest discover -s singbox -p 'test_convert_surge.py' -v
+        python singbox/convert_surge.py
     - name: Commit and push config.json
       run: |
         git config --global user.email "action@github.com"
         git config --global user.name "GitHub Action"
         git add ./singbox/rule/*.json
         git add ./singbox/rule/*.srs
+        git add ./singbox/surge/*.json
 
         # 检查是否有文件被修改
         if git diff --staged --quiet; then

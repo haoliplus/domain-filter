@@ -1,0 +1,86 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "poecdn.net",
+        "auth0.com",
+        "challenges.cloudflare.com",
+        "identrust.com",
+        "ai.com",
+        "chat.openai.com.cdn.cloudflare.net",
+        "sentry.io",
+        "openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net",
+        "openaicom.imgix.net",
+        "openaicomproductionae4b.blob.core.windows.net",
+        "production-openaicom-storage.azureedge.net",
+        "datadoghq.com",
+        "statsig.com",
+        "livekit.cloud",
+        "oaiusercontent.com",
+        "client-api.arkoselabs.com",
+        "events.statsigapi.net",
+        "featuregates.org",
+        "intercom.io",
+        "intercomcdn.com",
+        "stripe.com",
+        "openai.com",
+        "oaistatic.com",
+        "sora.com",
+        "chatgpt.com",
+        "chat.com",
+        "perplexity.ai",
+        "anthropic.com",
+        "claude.ai",
+        "claude.com",
+        "bard.google.com",
+        "gemini.google",
+        "gemini.google.com",
+        "deepmind.com",
+        "deepmind.google",
+        "generativelanguage.googleapis.com",
+        "geller-pa.googleapis.com",
+        "proactivebackend-pa.googleapis.com",
+        "cloudcode-pa.googleapis.com",
+        "g.ai",
+        "aistudio.google.com",
+        "makersuite.google.com",
+        "generativeai.google",
+        "notebooklm.google",
+        "notebooklm.google.com",
+        "poe.com",
+        "meta.ai",
+        "dify.ai",
+        "clipdrop.co",
+        "jasper.ai",
+        "openart.ai",
+        "grok.com",
+        "x.ai",
+        "groq.com"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "openai",
+        "alkalimakersuite-pa.clients6.google.com"
+      ]
+    },
+    {
+      "domain": [
+        "aisandbox-pa.googleapis.com",
+        "robinfrontend-pa.googleapis.com",
+        "ai.google.dev",
+        "alkalicore-pa.clients6.google.com",
+        "jules.google.com",
+        "aida.googleapis.com",
+        "antigravity.google",
+        "antigravity-unleash.goog",
+        "daily-cloudcode-pa.googleapis.com",
+        "gateway.ai.cloudflare.com",
+        "api.github.com",
+        "api.jetbrains.ai",
+        "openrouter.ai"
+      ]
+    }
+  ]
+}

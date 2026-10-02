@@ -1,0 +1,47 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "watcha.team",
+        "watcha.com",
+        "watcha.co.kr",
+        "watcha.zendesk.com",
+        "zdassets.com",
+        "amz.wtchn.net",
+        "watch-cdn.product.api.espn.com",
+        "apis.pooq.co.kr",
+        "pooq3-static-json.pooq.co.kr",
+        "wavve.com",
+        "launches.appsflyer.com",
+        "sdk.iad-05.braze.com",
+        "graph.facebook.com",
+        "ipv4.cws.conviva.com",
+        "ipv6.cws.conviva.com",
+        "cj.drmkeyserver.com",
+        "image.pip.cjenm.com",
+        "hqkoz2vau9.execute-api.ap-northeast-2.amazonaws.com",
+        "tving.com",
+        "coupang.com",
+        "coupangplay.com",
+        "naver.com",
+        "smartmediarep.com",
+        "afreecatv.com",
+        "vod.kbs.co.kr",
+        "kbs.co.kr",
+        "kr"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "watcha",
+        "wavve",
+        "tving",
+        "coupang",
+        "afreeca",
+        "afreecatv",
+        ".kr"
+      ]
+    }
+  ]
+}

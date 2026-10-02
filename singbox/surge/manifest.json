@@ -1,0 +1,126 @@
+{
+  "direct.json": {
+    "source": "surge/direct.txt",
+    "sha256": "55fac8e97f0db580ffe0356cda45c876afc60f1fd05967ecbcf2dbc1b247fc9f",
+    "source_rules": 111515,
+    "skipped": []
+  },
+  "private.json": {
+    "source": "surge/private.txt",
+    "sha256": "21764f1415da8a3252463d16cc48bf4c4e695cf64048c821e5860333d271180c",
+    "source_rules": 130,
+    "skipped": []
+  },
+  "proxy.json": {
+    "source": "surge/proxy.txt",
+    "sha256": "6484ab167aef9bc5fd6756466c2bfb27a2ed670fe974e8b6b3b3e1bba7359ba8",
+    "source_rules": 27027,
+    "skipped": []
+  },
+  "gfw.json": {
+    "source": "surge/gfw.txt",
+    "sha256": "e45780b46867dfe22ab7610d799c11d2fc704bf2433f94315eb38d8bbf57a65b",
+    "source_rules": 4373,
+    "skipped": []
+  },
+  "Adblock4limbo_surge.json": {
+    "source": "surge/Adblock4limbo_surge.list",
+    "sha256": "98cdba9999034842c0ca4a67d8d1b2566143aec3468a64fea5b6355fcade8181",
+    "source_rules": 475,
+    "skipped": []
+  },
+  "GoogleCN.json": {
+    "source": "surge/GoogleCN.list",
+    "sha256": "00ffcc16d0eb1898cba4f9c2cc2ce76a8f70bef7a03aea436dad79982b77c8ca",
+    "source_rules": 29,
+    "skipped": []
+  },
+  "Download.json": {
+    "source": "surge/Download.list",
+    "sha256": "159a00c3a4242c04afcca845caef6b87e6262073f0ae2a10cb3e2b3b90a47100",
+    "source_rules": 18,
+    "skipped": [
+      {
+        "line": 15,
+        "type": "URL-REGEX",
+        "reason": "no equivalent sing-box route matcher"
+      },
+      {
+        "line": 16,
+        "type": "URL-REGEX",
+        "reason": "no equivalent sing-box route matcher"
+      },
+      {
+        "line": 20,
+        "type": "URL-REGEX",
+        "reason": "no equivalent sing-box route matcher"
+      }
+    ]
+  },
+  "ai.json": {
+    "source": "surge/ai.list",
+    "sha256": "e6df914973ea5a3d6c744a435b8e3595d577c678bec91c742e7645d65bf71a94",
+    "source_rules": 70,
+    "skipped": []
+  },
+  "KoreaMedia.json": {
+    "source": "surge/KoreaMedia.list",
+    "sha256": "c5ed828be3a0ea420b4dd1a6fbd15bc4c02755a99412a26813635564653c939d",
+    "source_rules": 34,
+    "skipped": []
+  },
+  "JapanMedia.json": {
+    "source": "surge/JapanMedia.list",
+    "sha256": "4a6d39df2435390ba4e732ab978fbbcf94902b6628cdd069b311404a89e6029e",
+    "source_rules": 162,
+    "skipped": []
+  },
+  "MAX.json": {
+    "source": "surge/MAX.list",
+    "sha256": "2d04f8b3e0aa60cfa9e9caf7bff8edb75315acc5780cc16b4094dcad7882a7ae",
+    "source_rules": 2,
+    "skipped": []
+  },
+  "GameRule.json": {
+    "source": "surge/GameRule.list",
+    "sha256": "12cd6ff7ef61ea9f4a160e23cba1c13def4531f32d7ca7b886e188957e81cbe4",
+    "source_rules": 10,
+    "skipped": []
+  },
+  "chat.json": {
+    "source": "surge/chat.list",
+    "sha256": "0d0245a37de92dd029b0c9f6cd098acf274f5d603f82cdb93a68efa550fdda87",
+    "source_rules": 131,
+    "skipped": []
+  },
+  "ProxyGFWlist.json": {
+    "source": "surge/ProxyGFWlist.list",
+    "sha256": "4f15c1f67790cc045ccd27dd5948da2fe5fa4ddeab711dae34fab6abf01bfac9",
+    "source_rules": 6260,
+    "skipped": []
+  },
+  "apple.json": {
+    "source": "surge/apple.list",
+    "sha256": "3b755afba22389a5eaf98c94f4619670d6d8b5d2570c8aa9f84c0931c2d8ea55",
+    "source_rules": 13,
+    "skipped": [
+      {
+        "line": 13,
+        "type": "USER-AGENT",
+        "reason": "no equivalent sing-box route matcher"
+      }
+    ]
+  },
+  "telegramcidr.json": {
+    "source": "surge/telegramcidr.txt",
+    "sha256": "0d7d5252552d4dfd75c5b76bab4bfdb3313c1946611e22039d06008c7ef3c678",
+    "source_rules": 12,
+    "skipped": []
+  },
+  "cncidr.json": {
+    "source": "surge/cncidr.txt",
+    "sha256": "4d034fedd39dd642e1a2382e17d4161cc6a95e2a11ce03509e488da090b981e3",
+    "source_rules": 5814,
+    "skipped": []
+  }
+}
